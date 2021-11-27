@@ -8,7 +8,8 @@ let webpackDevServerOptions = {
   contentBase: path.join(process.cwd(), "dist"),
   historyApiFallback: true,
   hot: true,
-  host: "0.0.0.0"
+  host: "0.0.0.0",
+  disableHostCheck: true
 };
 
 webpackDevServer.addDevServerEntrypoints(webpackConfig, webpackDevServerOptions);
